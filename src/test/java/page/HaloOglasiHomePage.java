@@ -1,15 +1,14 @@
 package page;
 
 import base.BaseTest;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class HomePage extends BaseTest {
+public class HaloOglasiHomePage extends BaseTest {
 
-    public HomePage(){
+    public HaloOglasiHomePage(){
         PageFactory.initElements(driver,this);
     }
 
