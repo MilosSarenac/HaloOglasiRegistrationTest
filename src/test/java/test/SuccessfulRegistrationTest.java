@@ -8,7 +8,7 @@ import page.*;
 
 import java.util.Random;
 
-public class RegistrationTest extends BaseTest {
+public class SuccessfulRegistrationTest extends BaseTest {
     HaloOglasiHomePage haloOglasiHomePage;
     HaloOglasiUlogujSePage logInPage;
     RegistracijaPage registrationPage;
