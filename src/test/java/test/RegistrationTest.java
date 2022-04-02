@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class RegistrationTest extends BaseTest {
     HaloOglasiHomePage haloOglasiHomePage;
-    UlogujSePage logInPage;
+    HaloOglasiUlogujSePage logInPage;
     RegistracijaPage registrationPage;
     SuccessfulRegistrationPage successfulRegistrationPage;
     MailinatorHomePage mailinatorHomePage;
@@ -29,7 +29,7 @@ public class RegistrationTest extends BaseTest {
     @Before
     public void setUpTest(){
         haloOglasiHomePage = new HaloOglasiHomePage();
-        logInPage = new UlogujSePage();
+        logInPage = new HaloOglasiUlogujSePage();
         registrationPage = new RegistracijaPage();
         successfulRegistrationPage = new SuccessfulRegistrationPage();
         mailinatorHomePage = new MailinatorHomePage();
