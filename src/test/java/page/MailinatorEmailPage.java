@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.ArrayList;
+
 public class MailinatorEmailPage extends BaseTest {
     public MailinatorEmailPage () {
         PageFactory.initElements(driver,this);
@@ -21,5 +23,11 @@ public class MailinatorEmailPage extends BaseTest {
         driver.switchTo().frame("html_msg_body");
         js.executeScript("window.scrollBy(0,250)");
         wdWait.until(ExpectedConditions.visibilityOf(iFrame)).click();
+        driver.switchTo().defaultContent();
+    }
+    public void switchToNewTab(){
+        wdWait.until(ExpectedConditions.numberOfWindowsToBe(2));
+        ArrayList<String> numbersOfTabs = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(numbersOfTabs.get(1));
     }
 }
